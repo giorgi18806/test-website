@@ -17,4 +17,60 @@
 /* different text-color above search */
 /* show the git message "Define the color pallette -*/
 
+/* tell about different font as review sender name */
+/* paste 2 links before other style elements to html file */
 
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    /* add color */
+    color: var(--color-body);
+    /* add font-size: ; */
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    color: var(--color-headings);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    /* add margin */
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
+git message = Define properties of the fonts
