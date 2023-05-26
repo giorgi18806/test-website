@@ -65,6 +65,11 @@ p {
     
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* Links */
 a {
     text-decoration: none;
@@ -242,6 +247,11 @@ a {
 .btn--block {
     width: 100%;
     display: inline-block;
+}
+
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -482,3 +492,102 @@ a {
 
 
 
+/* Callouts */
+.callout {
+    padding: 4rem;
+    border-radius: 20px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 3rem;
+    }
+
+    .callout .grid--col-2 {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+
+/* Collapsibles */
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg)
+}
+
+.collapsible__content {
+    display: none;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    display: block;
+}
+
+
+
+/* Blocks */
+.block {
+    --padding-vartical: 6rem;
+    padding: var(--padding-vartical) 2rem;
+    border: 2px solid red;
+}
+
+.block__heading {
+    margin-top: 0;
+}
+
+.block--dark {
+    background: #000;
+    color: #7b858b;
+}
+
+.block--dark .block__heading {
+    color: #fff;
+}
+
+.block--skewed-left {
+    padding-bottom: calc(var(--padding-vartical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block__header {
+    text-align: center;
+}
